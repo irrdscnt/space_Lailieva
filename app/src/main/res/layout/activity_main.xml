@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cosmos">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="236dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/astronautwoman"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/gradient_background"
+        android:text="Николь Онапу Манн "
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:alpha="0.9" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_color"
+        android:onClick="onWriteWishClicked"
+        android:text="Написать пожелание космонавту" />
+
+    <EditText
+        android:id="@+id/editTextWish"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/gradient_background"
+        android:gravity="center"
+        android:hint="Введите ваше пожелание"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:visibility="gone" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_color"
+        android:onClick="onSendWishClicked"
+        android:text="Отправить пожелание"
+        android:visibility="gone" />
+
+</LinearLayout>
